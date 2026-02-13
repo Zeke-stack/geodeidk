@@ -11,17 +11,17 @@ jobs:
     
     steps:
     - uses: actions/checkout@v4
+      with:
+        submodules: recursive
     
-    - name: Setup Geode SDK
+    - name: Build the mod
       uses: geode-sdk/build-geode-mod@main
       with:
-        sdk-version: 4.1.2
-        
-    - name: Build mod
-      run: geode build
+        sdk: 4.1.2
+        target: Win64
       
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
-        name: FakeGDMod
+        name: FakeGDMod-geode
         path: build/*.geode
