@@ -1,0 +1,27 @@
+name: Build FakeGDMod
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Geode SDK
+      uses: geode-sdk/build-geode-mod@main
+      with:
+        sdk-version: 4.1.2
+        
+    - name: Build mod
+      run: geode build
+      
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: FakeGDMod
+        path: build/*.geode

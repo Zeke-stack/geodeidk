@@ -1,0 +1,81 @@
+{
+	"geode": "4.1.2",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "bitz.fakegdmod",
+	"tags": [
+		"joke",
+		"content",
+		"customization"
+	],
+	"settings": {
+		"modType": {
+			"name": "Role Type",
+			"description": "Select your role: 1 = Moderator, 2 = Elder Moderator, 3 = Leaderboard Moderator, 4 = Developer",
+			"type": "int",
+			"default": 1,
+			"min": 1,
+			"max": 4
+		},
+		"enableFeaturing": {
+			"name": "Enable Level Featuring",
+			"description": "Allows you to feature levels (Moderator & Elder only)",
+			"type": "bool",
+			"default": true
+		},
+		"enableEpic": {
+			"name": "Enable Epic Rating",
+			"description": "Allows you to mark levels as Epic (Elder Moderator only)",
+			"type": "bool",
+			"default": true
+		},
+		"enableCreatorPoints": {
+			"name": "Enable Creator Points",
+			"description": "Allows you to award creator points (Moderator & Elder only)",
+			"type": "bool",
+			"default": true
+		},
+		"showLevelPasswords": {
+			"name": "Show Level Passwords",
+			"description": "Display passwords for copy-protected levels (All roles)",
+			"type": "bool",
+			"default": false
+		},
+		"enableCommentModeration": {
+			"name": "Enable Comment Moderation",
+			"description": "Allows you to delete any comments (Elder Moderator & Developer only)",
+			"type": "bool",
+			"default": true
+		},
+		"glowingUsername": {
+			"name": "Glowing Username",
+			"description": "Makes your username glow like RobTop's (Developer only)",
+			"type": "bool",
+			"default": false
+		},
+		"unlockAllIcons": {
+			"name": "Unlock All Icons",
+			"description": "Grants access to all icons and colors (Visual only)",
+			"type": "bool",
+			"default": false
+		},
+		"bypassRateLimits": {
+			"name": "Bypass Rate Limits",
+			"description": "Skip cooldown timers for ratings and uploads (Moderator & above)",
+			"type": "bool",
+			"default": true
+		}
+	},
+	"links": {
+		"source": "https://github.com/iArtie/FakeGDMod",
+		"community": "https://discord.gg/gXg8w4xJDA"
+	},
+	"name": "FakeGDMod",
+	"version": "v2.5.0",
+	"developer": "BitZ",
+	"description": "A comprehensive mod that simulates moderator, elder moderator, leaderboard moderator, and developer privileges with custom moderator control panel, reported levels management, user moderation, and authentic features"
+}
