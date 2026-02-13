@@ -17,7 +17,7 @@ jobs:
     - name: Build the mod
       uses: geode-sdk/build-geode-mod@main
       with:
-        sdk: 4.1.2
+        sdk: 3.8.1
         target: Win64
       
     - name: Upload artifact
